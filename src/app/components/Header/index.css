@@ -1,8 +1,19 @@
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid pink;
+    height: 7rem;
+    padding: 0 4.4rem;
+}
+
+
 .navigation {
     display: flex;
     list-style: none;
     gap: 32px;
-    border: 1px solid pink
+    font-size: 1.2rem;
 }
 
 .navigation a:hover{

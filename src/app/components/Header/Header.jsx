@@ -1,5 +1,13 @@
 import Link from 'next/link'
 import './index.css'
+import { Montserrat } from 'next/font/google'
+import SocialNetworks from '../SocialNetworks/SocialNetworks'
+import Logo from '../Logo/Logo'
+
+
+
+const montserrat = Montserrat({ weight: '600',
+subsets: ['latin'],})
 
 const links = [{
     label: 'Conoce a',
@@ -17,12 +25,12 @@ const links = [{
 export default function Header() {
     
     return(
-        <header className='navigation'>
+        <header className='header__container'>
             <nav>
-                <ul>
+                <ul className='navigation' >
                     {
                         links.map(({label, route}) => (
-                            <li key={route}>
+                            <li key={route} className={montserrat.className}>
                                 <Link href={route}>
                                     {label}
                                 </Link>
@@ -32,6 +40,8 @@ export default function Header() {
                 </ul>
 
             </nav>
+            <Logo />
+            <SocialNetworks /> 
             
         </header>
     )
