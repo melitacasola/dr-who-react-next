@@ -1,41 +1,48 @@
 import Image from "next/image"
 import './index.css'
-import facebookIcon from '../../../assets/img/icons/facebook.svg'
-import xIcon from '../../../assets/img/icons/simple-icons_x.svg'
-import instagramIcon from '../../../assets/img/icons/mdi_instagram.svg'
-import tiktokIcon from '../../../assets/img/icons/ic_baseline-tiktok.svg'
+
+
+const socialNetworks = [
+    {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/',
+        icon: '/icons/facebook.svg',
+    },
+    {
+        name: 'Twitter',
+        url: 'https://twitter.com/?lang=es',
+        icon: '/icons/simple-icons_x.svg',
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/',
+        icon: '/icons/mdi_instagram.svg',
+    },
+    {
+        name: 'TikTok',
+        url: 'https://www.tiktok.com/es/',
+        icon: '/icons/ic_baseline-tiktok.svg',
+    },
+]
 
 
 export default function SocialNetworks() {
     
     return(
-        <div className="social__networks" target="_blank">
-            <a href="https://www.facebook.com/">
-                <Image 
-                src={facebookIcon}
-                alt= "facebook Icon"
-                width={24}
-                height={24}
-                />
-            </a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><Image 
-                src={xIcon}
-                alt="x icon"
-                width={24}
-                height={24}
-            /></a>
-            <a href="https://www.instagram.com/" target="_blank"><Image 
-                src={instagramIcon}
-                alt="instagram icon"
-                width={24}
-                height={24}
-            /></a>
-            <a href="https://www.tiktok.com/es/" target="_blank"><Image 
-                src={tiktokIcon}
-                alt="tik tok icon"
-                width={24}
-                height={24}
-            /></a>
+        <div className="social__networks" >
+            {
+                socialNetworks.map((network) => (
+                <a key={network.name} href={network.name} target="_blank">
+                    <Image 
+                    src={network.icon}
+                    alt= {`${network.name} Icon`}
+                    width={24}
+                    height={24}
+                    />
+                </a>
+                ))
+            }
+            
         </div>
     )
 }

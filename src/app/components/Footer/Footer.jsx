@@ -8,6 +8,7 @@ export default function Footer() {
         <footer className='footer__container'>
             <Image
             src={logoCadena}
+            alt='cadena de dr. Who'
             width={35}
             height={34}/>
             <SocialNetworks />
