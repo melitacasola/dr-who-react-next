@@ -8,7 +8,7 @@ export default function Logo() {
     return (
         <div className='logo__img'>
             <Link href='/' >
-            <Image src={LogoImage} alt='Dr. Who Home' width={200} height={200} />
+                <Image src={LogoImage} alt='Dr. Who Home' width={200} height={200} />
             </Link>
         </div>
     )

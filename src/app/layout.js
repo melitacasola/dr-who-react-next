@@ -1,14 +1,13 @@
-import { Lato, Montserrat } from 'next/font/google'
 import './globals.css'
-
+import { Lato, Montserrat } from 'next/font/google'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 
 
 const lato = Lato({ weight: '700',
 subsets: ['latin'],
 style: 'normal' })
-
 
 const montserrat = Montserrat({ weight: ['600', '400'],
 subsets: ['latin'],
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
         
         {children}
         
-        
+        <Footer/>
         </body>
       
     </html>

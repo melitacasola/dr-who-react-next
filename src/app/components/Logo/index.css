@@ -1,8 +1,10 @@
 .logo__img{
     padding: 0;
-    margin: 2rem;
+    border: 2px solid yellow
 }
 
 .logo__img img{
-   margin-top: 3rem;
+    margin-top: 2rem;
+    height: 12rem;
+    width: 12rem;
 }
