@@ -1,6 +1,6 @@
 import doctorsData from '../../assets/doctors.json'
 import Image from 'next/image';
-
+import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
 
 const DoctorsCards = () => {
     return (
@@ -21,6 +21,8 @@ const DoctorsCards = () => {
                   <p>{doctor.actor}</p>
                   <p>{doctor.screen_time}</p>
                 </div>
+              <ButtonComponent to="https://nextjs.org/docs/pages/api-reference/components/link" text="Ir a Otra Página"/>
+
               </li>
             ))}
           </ul>

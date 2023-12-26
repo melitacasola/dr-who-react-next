@@ -6,6 +6,24 @@
     font-size: 64px;
 }
 
+
+/* .doctors{
+    margin:0 4rem;
+    }
+    
+    .doctors__title{
+    padding: 0 4.313rem 4.313rem 4.313rem;
+    }
+    
+    .doctors__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5.5rem;
+    }
+     */
+     
 .section__doctors{
     display: flex;
     margin: 2rem 0;

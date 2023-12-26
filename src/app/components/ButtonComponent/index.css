@@ -1,0 +1,10 @@
+.btn__component {
+    background-color: var(--bg-second);
+    padding: 0.3rem 3rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    border-radius: 2.5rem;
+    /* width:max-content; */
+    padding: .818rem 25%;
+    color: var(--bg-third);
+}
