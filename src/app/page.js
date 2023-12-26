@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+
+import MainCarousel from './components/MainCarousel/MainCarousel'
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-
+    <main>
+      <MainCarousel />
     </main>
   )
 }
