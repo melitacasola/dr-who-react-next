@@ -1,9 +1,10 @@
 import './index.css'
+import { lato } from '../../fonts';
 
 const ButtonComponent = ({ to, text }) => {
 
     return (
-        <div>
+        <div className={lato.className}>
             <a href={to} target="_blank" className="btn__component">
                 {text}
             </a>

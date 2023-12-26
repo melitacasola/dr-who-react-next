@@ -14,7 +14,7 @@ const links = [{
     route: '/doctors'
 }, {
     label: 'Contacto',
-    route: '/contacto'
+    route: '/contact'
 }]
 
 

@@ -1,51 +1,40 @@
 .main__doctors{
-    padding: 2rem 5rem;
+    padding: 0rem 5rem;
 }
 
 .main__doctors h2{
     font-size: 64px;
+    margin-top: 2rem;
 }
 
 
-/* .doctors{
-    margin:0 4rem;
-    }
-    
-    .doctors__title{
-    padding: 0 4.313rem 4.313rem 4.313rem;
-    }
-    
-    .doctors__list{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5.5rem;
-    }
-     */
-     
 .section__doctors{
     display: flex;
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 .section__doctors ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
     list-style: none;
-
+    
 }
 
 .section__doctors-card{
-    
-    
+    max-width: 280px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 2.2rem;
 }
 
 .section__doctors img{
     display: flex;
-    gap: .5rem;
+    max-height: 850px;
+    max-width: 300px;
+
     
 }
 
@@ -55,9 +44,14 @@
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color: white;
-    gap: 1rem;
+    gap: 2.1rem;
     margin-top: 1rem;
+
 }
 
+
+.section__doctors-text-p{
+    font-style: italic;
+}

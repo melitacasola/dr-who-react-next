@@ -1,6 +1,7 @@
 import doctorsData from '../../assets/doctors.json'
 import Image from 'next/image';
 import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
+import { lato, montserrat } from '../fonts';
 
 const DoctorsCards = () => {
     return (
@@ -17,11 +18,14 @@ const DoctorsCards = () => {
                 className='section__doctors-img'
                 />
                 <div className="section__doctors-text">
-                  <h3>{doctor.doctor}</h3>
-                  <p>{doctor.actor}</p>
+                  <h3 className={lato.className}>{doctor.doctor}</h3>
+                  <p className='section__doctors-text-p'>{doctor.actor}</p>
                   <p>{doctor.screen_time}</p>
                 </div>
-              <ButtonComponent to="https://nextjs.org/docs/pages/api-reference/components/link" text="Ir a Otra Página"/>
+                <div className='section__doctors-btn'>
+
+                <ButtonComponent to="https://www.doctorwho.tv" text="Ver más" />
+                </div>
 
               </li>
             ))}
