@@ -1,5 +1,5 @@
 import Image from "next/image"
-import './index.css'
+import styles from './index.module.css'
 
 
 const socialNetworks = [
@@ -29,7 +29,7 @@ const socialNetworks = [
 export default function SocialNetworks() {
     
     return(
-        <div className="social__networks" >
+        <div className={styles["social__networks"]}>
             {
                 socialNetworks.map((network) => (
                 <a key={network.name} href={network.name} target="_blank">

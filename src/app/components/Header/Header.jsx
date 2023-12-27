@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import './index.css'
+import styles from './index.module.css'
 import { montserrat } from '../../fonts'
 import SocialNetworks from '../SocialNetworks/SocialNetworks'
 import Logo from '../Logo/Logo'
@@ -22,9 +22,9 @@ const links = [{
 export default function Header() {
     
     return(
-        <header className='header__container'>
+        <header className={styles['header__container']}>
             <nav>
-                <ul className='navigation' >
+                <ul className={styles['navigation']}>
                     {
                         links.map(({label, route}) => (
                             <li key={route} className={montserrat.className}>

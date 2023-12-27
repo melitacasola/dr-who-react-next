@@ -3,16 +3,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid pink;
-    height: 10rem;
-    padding: 0 5rem;
+    height: 9rem;
+    padding: 0 6rem;
+    z-index: 1;
 }
 
 
 .navigation {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 30px;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -21,6 +21,5 @@
     color: var(--bg-third);
 }
 .navigation a:hover{
-    color: #f0f0f0f0;
-    text-decoration: underline;
+    color: var(--bg-second);
 }

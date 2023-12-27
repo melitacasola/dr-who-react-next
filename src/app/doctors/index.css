@@ -2,6 +2,16 @@
     padding: 0rem 5rem;
 }
 
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 90px;
+    grid-row-gap: 80px;
+    }
+    
+.div1 { grid-area: 1 / 1 / 2 / 5; } */
+
 .main__doctors h2{
     font-size: 64px;
     margin-top: 2rem;
