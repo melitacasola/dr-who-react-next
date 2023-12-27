@@ -42,8 +42,10 @@ export default function MainCarousel() {
           <Image 
           src={`${imagesCarousel[currentImageIndex].imgUrl}`}
           alt="background Image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{
+            objectFit: 'cover'
+          }}
           />
           <div className={styles["image__carousel-h1"]}>
 
@@ -59,6 +61,9 @@ export default function MainCarousel() {
         <div className={styles["btns__carousel"]}>
           <button onClick={prevImage}></button>
           <button onClick={nextImage}></button>
+          <button></button>
+          <button></button>
+          <button></button>
         </div>
       </div>
     )
