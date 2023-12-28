@@ -11,8 +11,8 @@
       {
         "id":1,
         "doctor": "Primer Doctor",
-        "actor": "William Hartnell",
-        "screen_time": "1963-1966",
+        "actor": "Peter Cushing",
+        "screen_time": "1965-1966",
         "image": "/img/doctors/First_Doctor_Peter_Cushing.jpg"
       },
       {
@@ -109,7 +109,7 @@
       {
         "id":15,
         "doctor": "Doctor Fugitivo",
-        "actor": "Jodie Whittaker",
+        "actor": "Jo Martin",
         "screen_time": "2020",
         "image": "/img/doctors/Fugitive_Doctor_Jo_Martin.jpg"
       },

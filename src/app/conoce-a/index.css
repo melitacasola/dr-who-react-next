@@ -1,7 +1,6 @@
 .about__main{
     margin-right: 4.6rem;
     margin-left: 6rem;
-    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
 }
@@ -25,7 +24,7 @@
 
 .about__imgs-persistencia{
     position: absolute;
-    bottom: 8.5rem;
+    bottom: 10rem;
     right: 28rem;
 }
 

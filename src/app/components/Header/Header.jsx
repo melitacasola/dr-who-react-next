@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SearchContext } from '../../layout'
 import styles from './index.module.css'
 import { montserrat } from '../../fonts'
 import SearchComponent from '../SearchComponent/SearchComponent'
@@ -23,6 +24,8 @@ const links = [{
 export default function Header() {
     
     return(
+        <SearchContext.Consumer>
+        {({ setSearchResults }) => (
         <header className={styles['header__container']}>
             <nav>
                 <ul className={styles['navigation']}>
@@ -39,9 +42,11 @@ export default function Header() {
 
             </nav>
             <Logo />
-            <SearchComponent />
+            <SearchComponent setSearchResults={setSearchResults}/>
             <SocialNetworks /> 
             
         </header>
+        )}
+        </SearchContext.Consumer>
     )
 }

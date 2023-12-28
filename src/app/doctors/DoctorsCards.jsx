@@ -1,14 +1,13 @@
-import doctorsData from '../../assets/doctors.json'
 import Image from 'next/image';
 import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
-import { lato, montserrat } from '../fonts';
+import { lato } from '../fonts';
 
-const DoctorsCards = () => {
+const DoctorsCards = ({doctors}) => {
     return (
       <section className='section__doctors'>
         
           <ul>
-            {doctorsData.doctors?.map((doctor) => (
+            {doctors?.map((doctor) => (
               <li key={doctor.id} className="section__doctors-card">
                 <Image 
                 src={`${doctor.image}`}
