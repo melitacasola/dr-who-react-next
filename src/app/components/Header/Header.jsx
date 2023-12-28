@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from './index.module.css'
 import { montserrat } from '../../fonts'
+import SearchComponent from '../SearchComponent/SearchComponent'
 import SocialNetworks from '../SocialNetworks/SocialNetworks'
 import Logo from '../Logo/Logo'
 
@@ -38,6 +39,7 @@ export default function Header() {
 
             </nav>
             <Logo />
+            <SearchComponent />
             <SocialNetworks /> 
             
         </header>

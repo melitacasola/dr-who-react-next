@@ -19,6 +19,9 @@ body {
   overflow-x: hidden;
   background-color: var(--bg-general);
   color: var(--bg-third);
+  width: 1728px;
+  height: 1117px;
+
 }
 
 
