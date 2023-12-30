@@ -1,0 +1,27 @@
+.search__container{
+    display: inline;
+    margin-left: 5rem;
+}
+
+.search__container-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search__container-img{
+    margin-right: 1rem;
+}
+
+.search__container-input{
+    background-color: var(--bg-general);
+    font-size: 20px;
+    color: var(--bg-third);
+    font-weight: 800;
+    border: none;
+}
+.search__container-input::placeholder{
+    color: var(--bg-third);
+
+}

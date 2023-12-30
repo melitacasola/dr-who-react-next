@@ -22,16 +22,16 @@
     z-index: 1;
 }
 
-.about__imgs-persistencia{
+.about__imgs-persistencia {
     position: absolute;
-    bottom: 10rem;
-    right: 28rem;
+    bottom: 2.3rem;
+    right: 21rem;
 }
 
 .about__imgs-resistencia{
     position: absolute;
-    bottom: 14rem;
-    left: -18rem;
+    bottom: 6rem;
+    left: -9.5rem;
 }
 
 .about__section{
@@ -50,49 +50,21 @@
 .about__article p{
     font-size: 32px;
     text-align: center;
-    margin: 0 3rem;
+    margin: 0 5rem 0 0rem;
 }
 
-.about__article a{
+.about__article a {
     position: relative;
-    margin: 5rem;
+    margin: 6rem 0;
     padding: 1.5rem 9rem;
     display: flex;
     justify-content: center;
     font-size: 32px;
+    align-items: center;
     z-index: 2;
-
+    right: 3rem;
 }
 .about__imgs-dr{
     margin-bottom: 3.5rem;
     z-index: 2;
 }
-
-/* div de imagenes tiene la sgte prop
-*/
-/* div{
-    z-index: -1;
-    position: fixed;
-    width: 100vh;
-
-}
-image{
-    fill
-    {{object-fit: cover}}
-} */
-
-
-/* otro codigo */
-/* .hero{
-    position: relative;
-    color: var(--bg-second);
-}
-
-.hero--content{
-    padding: 48px 0;
-}
-
-.bg--img{
-    object-fit: cover;
-    z-index: -5;
-} */

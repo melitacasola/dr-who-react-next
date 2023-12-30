@@ -41,8 +41,11 @@ export default function Header() {
                 </ul>
 
             </nav>
-            <Logo />
-            <SearchComponent setSearchResults={setSearchResults}/>
+            <div className={styles['header__container-div']}>
+
+                <Logo />
+                <SearchComponent setSearchResults={setSearchResults}/>
+            </div>
             <SocialNetworks /> 
             
         </header>
