@@ -11,7 +11,7 @@ export default function ContactComponent() {
             <article className={styles['contact__article']}>
 
             <h2 className={lato.className}>Envia tu mensaje al Doctor</h2>
-                    
+
                 <Image
                     src='/img/symbols/persistencia-2.png'
                     width={279.295}
@@ -34,36 +34,37 @@ export default function ContactComponent() {
                 
             </article>
 
-            <article className={styles['contact__article-form']}>
-                <form action="" className={styles['contact__form']}>
-                    <label for="name">Nombre:</label>
-                    <input 
-                        type="text" 
-                        id="name" 
-                        name="name"
-                        placeholder="Escribe tu nombre"
-                        required
-                    />
+            <form action="" className={styles['contact__form']}>
+                <label for="name"></label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Nombre *"
+                    required
+                    className={`${styles['contact__form-name']} ${lato.className}`}
+                />
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email"
-                        placeholder="Correo electrónico"
-                        required
-                    />
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                        id="message" 
-                        name="message"
-                        placeholder="Escribe tu mensaje aquí"
-                        rows="4"
-                        required
-                    ></textarea>
-                    <ButtonComponent to='#' text="send" />
-                </form>
-            </article>
+                <label for="email"></label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="Email *"
+                    required
+                    className={`${styles['contact__form-email']} ${lato.className}`}
+                />
+                <label for="message"></label>
+                <textarea
+                    id="message" 
+                    name="message"
+                    placeholder="Mensaje *"
+                    rows="4"
+                    required
+                    className={`${styles['contact__form-msg']} ${lato.className}`}
+                ></textarea>
+                <ButtonComponent to='#' text="Send" />
+            </form>
         
     </section>
         

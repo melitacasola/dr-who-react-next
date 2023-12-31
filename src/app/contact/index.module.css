@@ -28,11 +28,14 @@
 .contact__article-imgs1{
     position: absolute;
     top: 24rem;
+    left:150.56px;
+    
 
 }
 .contact__article-imgs2{
     position: absolute;
     transform: rotate(-12.602deg);
+    left:21rem
     
 }
 .contact__article-imgs3{
@@ -41,37 +44,43 @@
     top: 41.5rem;
 }
 
-.contact__article-form{
-    display: flex;
-    flex-direction: column;
-}
 
 .contact__form{
     display: flex;
     flex-direction: column;
-}
-/*
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
+    width: 575px;
+    margin-right: 9.8rem;
+    margin-top: 1.5rem;
     
 }
 
-input, textarea {
-    background-color: black;
-    color: white;
-    padding: 0.5rem 0rem 0.5rem 1.5rem;
-    border: 1.9px solid white;
-    width: 20rem;
-
+.contact__form-name, 
+.contact__form-email, 
+.contact__form-msg{
+    border: 3px solid var(--bg-third);
+    background: #000;
+    font-size: 32px;
+    padding: 1rem 2.5rem;
+    margin-bottom: 74px;
+    color: var(--bg-third);
+    height: 66px
 }
 
-input::placeholder, textarea::placeholder {
-    color: white; 
+.contact__form-msg{
+    height: 277px;
 }
 
-textarea {
-    height: 8rem;
-} */
+.contact__form-name::placeholder, 
+.contact__form-email::placeholder, 
+.contact__form-msg::placeholder{
+    color: var(--bg-third);
+}
+
+.contact__form a{
+    display: flex;
+    width: 290px;
+    height: 62px;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+}
