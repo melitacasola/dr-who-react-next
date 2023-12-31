@@ -1,6 +1,6 @@
 import SocialNetworks from '../SocialNetworks/SocialNetworks'
 import Image from 'next/image'
-import logoCadena from '../../../assets/img/logos/logo-cadena.png'
+import logoCadena from '../../../../public/logos/logo-cadena.png'
 
 export default function Footer() {
     return(

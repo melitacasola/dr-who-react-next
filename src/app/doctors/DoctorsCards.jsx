@@ -24,7 +24,7 @@ const DoctorsCards = ({doctors}) => {
                   </div>
                 </div>
                 <div className='my-12 mt-12'>
-                <ButtonComponent to='https://www.doctorwho.tv/' text='Ver más' isLarge={false} customClass="py-2 px-16"/>
+                <ButtonComponent to='https://www.doctorwho.tv/' text='Ver más' isLarge={false} customClass="py-[1rem] px-16"/>
                 </div>
               </li>
             ))}

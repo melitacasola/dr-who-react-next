@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
-    /* height: auto; */
 }
 
 .contact__article{
@@ -35,7 +34,8 @@
 .contact__article-imgs2{
     position: absolute;
     transform: rotate(-12.602deg);
-    left:21rem
+    left: 21rem;
+    bottom: 15rem;
     
 }
 .contact__article-imgs3{

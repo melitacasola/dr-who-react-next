@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LogoImage from '../../../assets/img/logos/logo.png'
+import LogoImage from '../../../../public/logos/logo.png'
 import Image  from 'next/image';
 
 
