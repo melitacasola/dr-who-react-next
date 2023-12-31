@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import LogoImage from '../../../assets/img/logos/logo.png'
 import Image  from 'next/image';
-import styles from './index.module.css'
+
 
 
 export default function Logo() {
     return (
-        <div className={styles['logo__img']}>
+        <div className="relative z-10 top-6">
             <Link href='/' >
-                <Image src={LogoImage} alt='Dr. Who Home' width={200} height={200} />
+                <Image src={LogoImage} alt='Dr. Who Home' width={200} height={200} className="h-48 w-48"/>
             </Link>
         </div>
     )

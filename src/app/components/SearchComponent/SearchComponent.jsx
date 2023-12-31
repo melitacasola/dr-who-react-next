@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useState, useContext } from 'react'
 import doctorsData from '../../../assets/doctors.json'
 import { SearchContext } from '../../layout';
-import styles from './index.module.css'
 import { montserrat } from '../../fonts';
 
 const SearchComponent = () => {
@@ -22,14 +21,14 @@ const SearchComponent = () => {
     }
 
     return (
-        <div className={styles["search__container"]}>
-            <form onSubmit={handleSearch} className={styles["search__container-form"]}>
+        <div className="inline ml-20">
+            <form onSubmit={handleSearch} className="flex flex-row justify-between items-center p-2 m-3">
                 <Image
                     src='/icons/material-symbols-light_search.svg'
                     width={24}
                     height={24}
                     alt='buscador'
-                    className={styles["search__container-img"]}
+                    className="mr-2"
                     
                 />
                 <input
@@ -37,7 +36,7 @@ const SearchComponent = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Buscar"
-                    className={`${styles["search__container-input"]} ${montserrat.className}`}
+                    className={`bg-bgGeneral text-xl text-white placeholder:text-white font-semibold border-none ${montserrat.className}`}
                 />
             </form>
         </div>

@@ -1,7 +1,6 @@
 'use client'
 
 import {useState } from "react"
-import styles from './index.module.css'
 import { lato } from "../../fonts"
 import Image from 'next/image'
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
@@ -36,8 +35,8 @@ export default function MainCarousel() {
     };
   
     return (
-      <div className={styles["container__carousel"]}>
-        <div className={styles["image__carousel"]} >
+      <div className="relative w-full mx-auto overflow-hidden">
+        <div className="relative w-full h-[890px] bg-cover bg-center">
           
           <Image 
           src={`${imagesCarousel[currentImageIndex].imgUrl}`}
@@ -47,23 +46,23 @@ export default function MainCarousel() {
             objectFit: 'cover'
           }}
           />
-          <div className={styles["image__carousel-h1"]}>
+          <div className="absolute top-[18rem] left-[9rem]">
 
-          <h1 className={lato.className}>{imagesCarousel[currentImageIndex].title}</h1>
+          <h1 className={`${lato.className} text-8xl font-extrabold`}>{imagesCarousel[currentImageIndex].title}</h1>
           </div>
           
           
-          <div className={styles["btn__component"]}>
+          <div className="absolute bottom-[21.5rem] left-[9rem]">
           <ButtonComponent to='https://www.doctorwho.tv/' text='Ver ahora'/>
           </div>
         </div>
         
-        <div className={styles["btns__carousel"]}>
-          <button onClick={prevImage}></button>
-          <button onClick={nextImage}></button>
-          <button></button>
-          <button></button>
-          <button></button>
+        <div className="absolute bottom-[35px] right-[7rem]">
+          <button onClick={prevImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button onClick={nextImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
         </div>
       </div>
     )

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --bg-general: #040521;
@@ -15,13 +18,11 @@
 
 html,
 body {
-  max-width: 100vw;
+  
   overflow-x: hidden;
   background-color: var(--bg-general);
   color: var(--bg-third);
   width: 1728px;
-  height: 1117px;
-
 }
 
 

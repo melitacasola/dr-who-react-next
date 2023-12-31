@@ -1,5 +1,4 @@
 import Image from "next/image"
-import styles from './index.module.css'
 
 
 const socialNetworks = [
@@ -29,10 +28,10 @@ const socialNetworks = [
 export default function SocialNetworks() {
     
     return(
-        <div className={styles["social__networks"]}>
+        <div className="flex flex-row">
             {
                 socialNetworks.map((network) => (
-                <a key={network.name} href={network.name} target="_blank">
+                <a key={network.name} href={network.name} target="_blank" className="p-3">
                     <Image 
                     src={network.icon}
                     alt= {`${network.name} Icon`}

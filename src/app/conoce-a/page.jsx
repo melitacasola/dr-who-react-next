@@ -1,25 +1,24 @@
 import ConoceA from "./ConoceA";
 import Image from "next/image";
-import './index.css'
+
 
 export default function page() {
     return (
-        <div className="about__main">
-            <div className='about__imgs'>
+        <div className="mx-[6rem] flex flex-row">
+            <div className=''>
                 <Image 
                 src='/img/symbols/persistencia.png'
                 width={510}
                 height={510}
                 alt='Persistencia Simbolo'
-                className="about__imgs-persistencia"/>
+                className="absolute bottom-9 left-[2rem]"/>
                 <Image 
                 src='/img/symbols/resistencia.png'
                 width={750}
                 height={750}
                 alt='Resistencia Simbolo'
-                className="about__imgs-resistencia"/>
+                className="absolute bottom-[5rem] right-[18rem]"/>
             </div>
-            
             <ConoceA/>
         </div>
     )
