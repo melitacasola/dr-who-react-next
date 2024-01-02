@@ -26,32 +26,32 @@ const NavBar = () => {
 
   return(
     <div>
-    <nav className="bg-bgGeneral top-0 right-0 w-full fixed z-10">
-      <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className={`bg-bgGeneral top-0 right-0 w-full z-10 ${navBar ? 'fixed' : 'sm:relative'}`}>
+      <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
         <div className="md:py-5 md:block">
           <div className="md:hidden flex items-center">
             <button
-              className="p-2 text-gray-700 ml-auto"
-              onClick={() => setNavBar(!navBar)}
+              className="my-4 text-gray-700 ml-auto"
+              onClick={() => setNavBar(!navBar)}  
             >
               {navBar ? (
                 <Image 
                   src='/icons/material-symbols_close.svg' width={58} height={58} alt="NavBar close" 
-                />
+                  className='m-6'/>
               ) : (
                 <Image 
-                  src='/icons/material-symbols_menu.svg' width={58} height={58} alt='menu paginas'
+                  src='/icons/material-symbols_menu.svg' width={58} height={58} alt='menu paginas' 
                 />
               )}
             </button>
           </div>
         </div>
-        <div className={`flex-1  w-full mt-0 md:flex md:pb-0 md:mt-0 ${
-          navBar ? 'md:p-0 flex-col w-full bg-bgGeneral' : 'hidden'
+        <div className={`flex-1 w-full md:flex md:pb-0 md:mt-0 ${
+          navBar ? 'md:p-0 flex-col w-full bg-bgGeneral my-8' : 'hidden'
         }`}>
-          <ul className="flex flex-col items-center justify-center md:flex-row list-none gap-8 md:gap-12 text-xl font-bold bg-bgGeneral">
+          <ul className="flex flex-col items-center justify-center md:flex-row list-none gap-10 md:gap-12 text-xl font-bold">
             {links.map(({ label, route }) => (
-              <li key={route} className={montserrat.className}>
+              <li key={route} className={`${montserrat.className} md:text-xl text-3xl`}>
                 <Link href={route}>
                   {label}
                 </Link>
@@ -61,7 +61,7 @@ const NavBar = () => {
               <SearchComponent/>
             </li>
             <li className="md:hidden">
-              <SocialNetworks customClass="flex"/>
+              <SocialNetworks customClass="flex mt-14 mb-6"/>
             </li>
           </ul>
         </div>

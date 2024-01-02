@@ -37,7 +37,7 @@ export default function MainCarousel() {
     return (
       
       <div className="relative md:w-full mx-auto overflow-hidden">
-        <div className="relative w-full h-[890px] bg-cover bg-center md:mx-auto">
+        <div className="relative w-full md:h-[864px] h-[722px] bg-cover bg-center md:mx-auto">
           
           <Image 
           src={`${imagesCarousel[currentImageIndex].imgUrl}`}
@@ -49,18 +49,18 @@ export default function MainCarousel() {
           }}
           className="w-full h-full md:h-full md:w-48"
           />
-          <div className="absolute top-[18rem] left-[9rem]">
+          <div className="absolute md:top-[16rem] md:left-24 m-6 top-[17rem]">
 
-          <h1 className={`${lato.className} text-8xl font-extrabold`}>{imagesCarousel[currentImageIndex].title}</h1>
+          <h1 className={`${lato.className} md:text-8xl text-5xl font-extrabold`}>{imagesCarousel[currentImageIndex].title}</h1>
           </div>
           
           
-          <div className="absolute bottom-[21.5rem] left-[9rem]">
-          <ButtonComponent to='https://www.doctorwho.tv/' text='Ver ahora'/>
+          <div className="absolute md:bottom-[20rem] bottom-[16.5rem] md:left-[6.5rem] m-2">
+          <ButtonComponent to='https://www.doctorwho.tv/' text='Ver ahora' customClass="py-5 px-16 text-3xl"/>
           </div>
         </div>
         
-        <div className="absolute bottom-[35px] right-[7rem]">
+        <div className="absolute md:bottom-9 md:right-28 bottom-2 right-4">
           <button onClick={prevImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
           <button onClick={nextImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
           <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
