@@ -4,7 +4,7 @@ export default function ContactPage() {
     
     return(
         
-            <div style={{minHeight: '890px' }}>
+            <div >
                 <ContactComponent />
             </div>
             

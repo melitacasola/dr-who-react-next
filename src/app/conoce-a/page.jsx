@@ -11,7 +11,7 @@ export default function page() {
                 width={323.149}
                 height={323.149}
                 alt='Persistencia Simbolo'
-                className="absolute -left-20 bottom-[35rem] md:-bottom-14 md:-left-18 md:w-[510px] md:h-[510px] w-[423.149px] h-[423.149px]"/>
+                className="absolute -left-20 bottom-[36rem] md:-bottom-14 md:-left-18 md:w-[510px] md:h-[510px] w-[423.149px] h-[423.149px]"/>
                 <Image 
                 src='/img/symbols/resistencia.png'
                 width={366.703}

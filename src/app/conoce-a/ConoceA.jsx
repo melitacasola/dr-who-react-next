@@ -7,7 +7,7 @@ const ConoceA = () => {
     return (
         <section className='md:flex justify-between gap-[6.3rem]'>
             
-            <article className='flex flex-col items-center m-5 mb-24'>
+            <article className='flex flex-col items-center m-5 mb-28'>
                 <h2 className={`${lato.className} relative text-5xl leading-[3.5rem] md:text-6xl md:pt-10 text-center md:m-3 md:-left-10`}>Conoce a ... decimotercera doctor</h2>
                 <div className='md:p-10 md:mx-5 text-3xl flex items-center flex-col text-center md:mb-20 mb-12'>
                 <Image 

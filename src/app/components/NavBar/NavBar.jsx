@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return(
     <div>
-    <nav className={`bg-bgGeneral top-0 right-0 w-full z-10 ${navBar ? 'fixed' : 'sm:relative'}`}>
+    <nav className={`bg-bgGeneral top-0 right-0 w-full z-30 ${navBar ? 'fixed' : 'sm:relative'}`}>
       <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
         <div className="md:py-5 md:block">
           <div className="md:hidden flex items-center">

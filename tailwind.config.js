@@ -12,10 +12,10 @@ module.exports = {
       colors: {
       customYellow: '#FFC67E',
       
-  },
-  backgroundColor: {
-    bgGeneral: '#040521',
-  }
+      },
+      backgroundColor: {
+        bgGeneral: '#040521',
+      },
 },
   },
   plugins: [],

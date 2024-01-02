@@ -1,40 +1,56 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import { lato } from '../fonts'
-import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
-Image
-import styles from "./index.module.css";
+
+
 
 export default function ContactComponent() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    })
+    const handleChange = (event) => {
+        setFormData({
+        ...formData,
+        [event.target.name]: event.target.value,
+        })
+    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
     
+        console.log('Nombre:', formData.name)
+        console.log('Email:', formData.email)
+        console.log('Mensaje:', formData.message)
+    }
     return(
-        <section className={styles['contact__section']}>
-            <article className={styles['contact__article']}>
+        <section className='md:flex justify-between md:mt-8 md:pt-8 px-8'>
+            <article className='md:w-1/2'>
 
-            <h2 className={lato.className}>Envia tu mensaje al Doctor</h2>
-
+            <h2 className={`${lato.className} md:text-[64px] md:mx-8 text-5xl font-bold text-center md:w-[742px] leading-[5rem]`}>Envia tu mensaje al <br />Doctor</h2>
+            <div className='relative'> 
                 <Image
                     src='/img/symbols/persistencia-2.png'
-                    width={279.295}
-                    height={279.295}
-                    className={styles['contact__article-imgs1']}/>
+                    width={243.295}
+                    height={243.295}
+                    className='absolute md:top-3 -top-2 md:left-44 -left-7 md:h-[279.295px] md:w-[279.295px]'/>
                     
                     <Image
                     src='/img/symbols/resistencia.png'
-                    width={544.602}
-                    height={544.602}
-                    className={styles['contact__article-imgs2']}/>
+                    width={450}
+                    height={450}
+                    className='absolute transform rotate-45 md:left-[22rem] left-28 -bottom-[25rem] md:-bottom-[35rem] md:h-[544.602px] md:w-[544.602px]'/>
 
                     <Image
                     src='/img/symbols/vencer.png'
-                    width={329.483}
-                    height={329.483}
-                    className={styles['contact__article-imgs3']}/>
-                
-            
-                
+                    width={253.836}
+                    height={253.836}
+                    className='absolute top-56 -left-12 md:left-40 md:top-72 md:h-[329.483px] md:w-[329.483px]'/>
+            </div>
             </article>
 
-            <form action="" className={styles['contact__form']}>
+            <form action="" onSubmit={handleSubmit} className='flex flex-col md:gap-y-0 gap-y-6 md:w-[575px] md:mr-24'>
                 <label for="name"></label>
                 <input 
                     type="text" 
@@ -42,7 +58,9 @@ export default function ContactComponent() {
                     name="name"
                     placeholder="Nombre *"
                     required
-                    className={`${styles['contact__form-name']} ${lato.className}`}
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`border-[3px] border-white bg-black text-white placeholder:text-white text-3xl md:h-[66px] md:mb-20 h-14 px-10 py-4 ${lato.className} z-10`}
                 />
 
                 <label for="email"></label>
@@ -52,7 +70,9 @@ export default function ContactComponent() {
                     name="email"
                     placeholder="Email *"
                     required
-                    className={`${styles['contact__form-email']} ${lato.className}`}
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`border-[3px] border-white bg-black text-white placeholder:text-white text-3xl md:h-[66px] md:mb-20 h-14 px-10 py-4 ${lato.className} z-10`}
                 />
                 <label for="message"></label>
                 <textarea
@@ -61,9 +81,11 @@ export default function ContactComponent() {
                     placeholder="Mensaje *"
                     rows="4"
                     required
-                    className={`${styles['contact__form-msg']} ${lato.className}`}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className={`border-[3px] border-white bg-black text-white placeholder:text-white text-3xl px-10 py-4 md:mb-16 h-13 md:h-[277px] ${lato.className} z-10`}
                 ></textarea>
-                <ButtonComponent to='#' text="Send" />
+                <button type='submit' className={`flex md:w-72 w-60 md:h-16 h-14 text-2xl md:text-4xl justify-center items-center md:mb-24 mb-12 relative bg-customYellow px-12 rounded-full font-extrabold text-3xl md:text-4xl text-black z-0 ${lato.className}`}>Send</button>
             </form>
         
     </section>

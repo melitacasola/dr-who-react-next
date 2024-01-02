@@ -39,6 +39,7 @@
     
 }
 .contact__article-imgs3{
+
     position: absolute;
     left:150.56px;
     top: 41.5rem;
@@ -83,4 +84,21 @@
     font-size: 32px;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 768px) { 
+    .contact__section{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__component{
+        max-height: auto
+    }
+
+    .contact__form{
+        display: flex;
+
+    }
+    
+
 }
