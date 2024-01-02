@@ -14,15 +14,20 @@ export default function Header() {
     return(
         <SearchContext.Consumer>
         {({ setSearchResults }) => (
-        <header className='bg-bgGeneral flex justify-between items-center h-[9rem] px-[7rem]'>
-            <NavBar/>
+        <header className='bg-bgGeneral flex md:flex-row justify-between items-center md:h-[9rem] md:px-[7rem] px-8 h-auto'>
+            <div className="order-2 md:order-1">
+                <NavBar/>
+            </div>
 
-            <div className="flex justify-around items-center">
+            <div className="md:flex justify-around items-center md:order-1">
                 <Logo />
+                <div className='hidden md:block'>
                 <SearchComponent setSearchResults={setSearchResults}/>
+                </div>
 
             </div>
-            <SocialNetworks /> 
+
+            <SocialNetworks customClass="hidden md:block md:order-2 "/> 
             
         </header>
         )}

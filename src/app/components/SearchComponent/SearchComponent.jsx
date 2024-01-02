@@ -21,7 +21,7 @@ const SearchComponent = () => {
     }
 
     return (
-        <div className="inline ml-20">
+        <div className="md:ml-20">
             <form onSubmit={handleSearch} className="flex flex-row justify-between items-center p-2 m-3">
                 <Image
                     src='/icons/material-symbols-light_search.svg'

@@ -35,8 +35,9 @@ export default function MainCarousel() {
     };
   
     return (
-      <div className="relative w-full mx-auto overflow-hidden">
-        <div className="relative w-full h-[890px] bg-cover bg-center">
+      
+      <div className="relative md:w-full mx-auto overflow-hidden">
+        <div className="relative w-full h-[890px] bg-cover bg-center md:mx-auto">
           
           <Image 
           src={`${imagesCarousel[currentImageIndex].imgUrl}`}
@@ -44,7 +45,9 @@ export default function MainCarousel() {
           fill
           style={{
             objectFit: 'cover'
+            
           }}
+          className="w-full h-full md:h-full md:w-48"
           />
           <div className="absolute top-[18rem] left-[9rem]">
 
