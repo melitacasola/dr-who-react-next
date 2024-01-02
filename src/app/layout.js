@@ -5,6 +5,7 @@ import {montserrat} from './fonts'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
+
 export const SearchContext = React.createContext();
 
 export default function RootLayout({ children }) {
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <SearchContext.Provider value={{ searchResults, setSearchResults }}>
 
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>Dr. Who</title>
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
         {children}
       
         <Footer/>
-        </body>
+      </body>
       
     </html>
     </SearchContext.Provider>

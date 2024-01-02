@@ -2,9 +2,13 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { lato } from '../fonts'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
-
-
+const contextClass ={
+    success: "bg-blue-600",
+    error: "bg-red-600",
+}
 export default function ContactComponent() {
     const [formData, setFormData] = useState({
         name: '',
@@ -19,11 +23,26 @@ export default function ContactComponent() {
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-    
-        console.log('Nombre:', formData.name)
-        console.log('Email:', formData.email)
-        console.log('Mensaje:', formData.message)
+        if (formData.name && formData.email && formData.message) {
+            console.log(`Nombre: ${formData.name} - Email: ${formData.email} - Mensaje: ${formData.message}`)
+            return notifySuccess();
+        } 
     }
+    
+    const notifySuccess = () => {
+        toast.success('¡Su mensaje ha sido enviado correctamente!', {
+            position: 'bottom-right',
+            autoClose: 15000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,                 
+        });
+    };
+    
+
+
     return(
         <section className='md:flex justify-between md:mt-8 md:pt-8 px-8'>
             <article className='md:w-1/2'>
@@ -86,6 +105,8 @@ export default function ContactComponent() {
                     className={`border-[3px] border-white bg-black text-white placeholder:text-white text-3xl px-10 py-4 md:mb-16 h-13 md:h-[277px] ${lato.className} z-10`}
                 ></textarea>
                 <button type='submit' className={`flex md:w-72 w-60 md:h-16 h-14 text-2xl md:text-4xl justify-center items-center md:mb-24 mb-12 relative bg-customYellow px-12 rounded-full font-extrabold text-3xl md:text-4xl text-black z-0 ${lato.className}`}>Send</button>
+                
+                <ToastContainer style={{ height: "150px", width: "430px"}} bodyClassName={() => "text-xl font-white font-med block p-5"}/>
             </form>
         
     </section>
