@@ -22,7 +22,7 @@ const SearchComponent = () => {
 
     return (
         <div className="md:ml-20 ">
-            <form onSubmit={handleSearch} className="flex flex-row justify-between items-center p-2 md:m-3">
+            <form onSubmit={handleSearch} id='idSearch' className="flex flex-row justify-between items-center p-2 md:m-3">
                 <Image
                     src='/icons/material-symbols-light_search.svg'
                     width={46}
@@ -36,6 +36,7 @@ const SearchComponent = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Buscar"
+                    id='drSearch'
                     className={`bg-bgGeneral md:text-xl text-3xl w-32 text-white placeholder:text-white font-semibold border-none ${montserrat.className}`}
                 />
             </form>
