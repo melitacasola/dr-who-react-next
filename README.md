@@ -5,11 +5,11 @@
 
 ### Índice
 
+- [Funcionalidades](#funcionalidades)
 - [💻Tecnologías](#tecnologías)
 - [Herramientas](#herramientas)
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Funcionalidades](#funcionalidades)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
 - [Recursos](#recursos)
@@ -79,7 +79,7 @@ Para ejecutar la aplicación en un entorno de desarrollo:
 
 5. Ejecución de Test E2E
 
-Para ejecutar las pruebas en la bas escribe el siguiente comando:
+Para ejecutar las pruebas en la bash escribe el siguiente comando:
 
 ```npm run cypress:open```
 
@@ -110,7 +110,7 @@ Next.js utiliza enrutamiento del sistema de archivos donde se usan carpetas para
   
 - 📁 **app/doctors**: Contiene los archivos que representan ```dashboard``` **Doctores* de la aplicación.
 
-- 📁 **/cypres**: ```E2E``` Contiene pruebas unitarias y de integración para el código.
+- 📁 **/cypres**: ```/E2E``` Contiene pruebas unitarias y de integración para el código.
 
 - 📄 **.gitignore**: Especifica qué archivos y directorios deben ser ignorados por Git.
 
@@ -145,12 +145,14 @@ Next.js utiliza enrutamiento del sistema de archivos donde se usan carpetas para
 ## Autora
 
 Hecho con ❤️ por Melita Casola. 
+gracias a las Amigas @ArlenyAres y @01joanna por bancar
+y a Gabi Peralta por estar en las madrugadas salvandome el proyecto
 
 
 <hr>
 
 
-## Learn More
+## Learn More about NEXT JS
 
 To learn more about Next.js, take a look at the following resources:
 
