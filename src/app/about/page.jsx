@@ -1,4 +1,4 @@
-import ConoceA from "./ConoceA";
+import AboutUs from "./AboutUs";
 import Image from "next/image";
 
 
@@ -19,7 +19,7 @@ export default function page() {
                 alt='Resistencia Simbolo'
                 className="absolute bottom-[45rem] -right-28 md:bottom-7 md:right-48 md:w-[750px] md:h-[750px] w-[466.7px] h-[466.7px]"/>
             </div>
-            <ConoceA className='z-20'/>
+            <AboutUs className='z-20'/>
         </div>
     )
 }

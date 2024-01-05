@@ -2,7 +2,7 @@ import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
 import Image from 'next/image'
 import { lato } from '../fonts'
 
-const ConoceA = () => {
+const AboutUs = () => {
 
     return (
         <section className='md:flex justify-between gap-[6.3rem]'>
@@ -42,4 +42,4 @@ const ConoceA = () => {
     )
 }
 
-export default ConoceA
+export default AboutUs
