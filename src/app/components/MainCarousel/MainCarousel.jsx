@@ -56,13 +56,13 @@ export default function MainCarousel() {
           
           
           <div className="absolute md:bottom-[20rem] bottom-[16.5rem] md:left-[6.5rem] m-2">
-          <ButtonComponent to='https://www.doctorwho.tv/' text='Ver ahora' customClass="py-5 px-16 text-3xl"/>
+          <ButtonComponent data-cy="ver-ahora-button" to='https://www.doctorwho.tv/' text='Ver ahora' customClass="py-5 px-16 text-3xl"/>
           </div>
         </div>
         
         <div className="absolute md:bottom-9 md:right-28 bottom-2 right-4">
-          <button onClick={prevImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
-          <button onClick={nextImage} className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button onClick={prevImage} data-cy="prev-image" className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
+          <button onClick={nextImage} data-cy="next-image" className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
           <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
           <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
           <button className="border-solid border-[3px] border-white p-2 m-3 cursor-pointer rounded-full hover:bg-customYellow hover:border-customYellow"></button>
