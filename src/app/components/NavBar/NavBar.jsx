@@ -8,7 +8,7 @@ import SocialNetworks from '../SocialNetworks/SocialNetworks';
 const links = [
   {
     label: 'Conoce a',
-    route: '/conoce-a',
+    route: '/about',
   },
   {
     label: 'Doctores',

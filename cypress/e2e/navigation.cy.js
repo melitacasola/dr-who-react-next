@@ -31,7 +31,7 @@ describe('Main Carousel Test', () => {
     cy.get('li:contains("Conoce a"):first').click()
 
     // Validate that the URL has changed
-    cy.location('pathname').should('include', 'conoce-a')
+    cy.location('pathname').should('include', 'about')
     cy.wait(1000 * speedFactor)
     })
 
