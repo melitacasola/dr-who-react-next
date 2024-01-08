@@ -11,11 +11,11 @@ const DoctorsCards = ({doctors}) => {
             <li key={doctor.id} className="relative md:mb-20">
                 <div className='md:flex flex-col h-full'>
                 <Image 
-                  src={`${doctor.image}`}
-                  alt={`Imagen del ${doctor.doctor}`}
-                  width={314}
-                  height={459.168}
-                  className='md:object-cover md:w-full md:h-[459.168px]'
+                    src={`${doctor.image}`}
+                    alt={`Imagen del ${doctor.doctor}`}
+                    width={314}
+                    height={459.168}
+                    className='md:object-cover md:w-full md:h-[459.168px]'
                 />
                 <div className="grid md:gap-x-8 md:gap-y-12 gap-y-8 mt-9 md:mt-12">
                     <h3 className={`${lato.className} text-4xl`}>{doctor.doctor}</h3>
