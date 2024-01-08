@@ -1,6 +1,6 @@
-import ButtonComponent from '../components/ButtonComponent/ButtonComponent'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 import Image from 'next/image'
-import { lato } from '../fonts'
+import { lato } from '../../fonts'
 
 const AboutUs = () => {
 

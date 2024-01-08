@@ -31,7 +31,7 @@ export default function SocialNetworks({customClass}) {
         <div className={`${customClass} md:flex flex-row`}>
             {
                 socialNetworks.map((network) => (
-                <a key={network.name} href={network.name} target="_blank" className="p-3">
+                <a key={network.name} href={network.url} target="_blank" className="p-3">
                     <Image 
                     src={network.icon}
                     alt= {`${network.name} Icon`}

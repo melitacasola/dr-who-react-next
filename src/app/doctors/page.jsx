@@ -2,7 +2,7 @@
 import { useContext } from 'react'
 import { SearchContext } from '../layout'
 import doctorsData from '../../assets/doctors.json'
-import DoctorsCards from './DoctorsCards'
+import DoctorsCards from '../components/DoctorsCards/DoctorsCards'
 import { lato } from '../fonts'
 
 export default function DoctorsPage(){
