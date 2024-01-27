@@ -1,6 +1,4 @@
-'use client'
-import { useContext } from 'react'
-import { SearchContext } from '../layout'
+
 import doctorsData from '../../assets/doctors.json'
 import DoctorsCards from '../components/DoctorsCards/DoctorsCards'
 import { lato } from '../fonts'
@@ -8,7 +6,6 @@ import filterData  from '../../utils/searchUtils'
 
 
 export default function DoctorsPage({ searchParams }){
-    // const { searchResults } = useContext(SearchContext);
     const searchParam = searchParams.search;
     const filteredDoctors = filterData(doctorsData, searchParam);
 

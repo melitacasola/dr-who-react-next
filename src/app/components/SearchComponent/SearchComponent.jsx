@@ -1,27 +1,19 @@
 'use client'
 
 import Image from 'next/image';
-import { useState, useContext } from 'react'
-// import doctorsData from '../../../assets/doctors.json'
-import { SearchContext } from '../../layout';
+import { useState } from 'react'
+
 import { montserrat } from '../../fonts';
 import { useRouter } from 'next/navigation';
 
 const SearchComponent = () => {
     const router = useRouter()
     const [searchQuery, setSearchQuery] = useState('')
-    // const {setSearchResults} = useContext(SearchContext)
 
     const handleSearch = (e) => {
         e.preventDefault()
         router.push(`/doctors?search=${searchQuery}`)
         setSearchQuery('')
-        // const query = searchQuery.toLowerCase().trim()
-
-        // const filteredResults = doctorsData.doctors.filter(({doctor, actor}) =>
-        // actor.toLowerCase().includes(query) || doctor.toLowerCase().includes(query)
-        // ) //doctor.actor.toLowerCase().includes(searchQuery.toLowerCase().trim())
-        // setSearchResults(filteredResults);
     }
 
     return (
