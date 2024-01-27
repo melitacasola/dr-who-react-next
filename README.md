@@ -144,9 +144,12 @@ Next.js utiliza enrutamiento del sistema de archivos donde se usan carpetas para
 
 ## Autora
 
-Hecho con ❤️ por Melita Casola. 
+Hecho con ❤️ por Melita Casola
+<a href="https://www.linkedin.com/in/melissa-casola/" target="_blank"><img src="https://camo.githubusercontent.com/2b91ca452712585ded21c915eefcf36ea6d69716da98590a76308ab959b61807/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b6564696e2d3041363643323f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="linkedin" data-canonical-src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;"></a>
+<hr>
 gracias a las Amigas @ArlenyAres y @01joanna por bancar
 y a Gabi Peralta por estar en las madrugadas salvandome el proyecto
+y a Vicki Robertson por sacarme de la zona de confort de Grid
 
 
 <hr>
