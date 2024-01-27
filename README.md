@@ -31,7 +31,7 @@
   
 En el NavBar el Logo de Dr. Who redirecciona a la página de Inicio y una sección de **Búsqueda*: Barra de búsqueda en el encabezado para encontrar doctores por nombre del dr. o el del actor.
   
-#### **la Aplicación web cuenta con un diseño responsive min with de 768px*
+#### **la Aplicación web cuenta con un diseño responsive para dos tipos de pantallas, desktop 1728px x 1117 y lapton desde min with de 768px* 
 
 ## 💻 Tecnologías
 
