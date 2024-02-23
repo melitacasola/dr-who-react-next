@@ -13,6 +13,7 @@ export default function DoctorsPage({ searchParams }){
     return(
         <main className="md:px-20 px-12 py-0">
             <h2 className={`${lato.className} md:text-6xl my-8 md:p-8 md:m-8 text-5xl`}>Doctores</h2>
+            
             {filteredDoctors.length > 0 ? (
                 <DoctorsCards doctors={filteredDoctors}/>
             ) : (
